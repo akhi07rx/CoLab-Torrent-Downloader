@@ -7,6 +7,8 @@ This code allows you to download torrents directly to your Google Drive using Go
 - Download torrents from magnet links
 - Save downloaded files to a specified location on Google Drive
 - Display a progress bar and information about the downloaded file
+- Prompt the user to enter the magnet link or exit
+- Handle incorrect inputs and display error messages
 
 ## Prerequisites
 
@@ -17,9 +19,9 @@ This code allows you to download torrents directly to your Google Drive using Go
 
 1. Open the code in Google Colab.
 2. Run the first cell to install the `libtorrent` library and mount your Google Drive.
-3. Change the `link` variable to the magnet link of the torrent you want to download.
-4. Change the `save_path` parameter to the location on your Google Drive where you want to save the downloaded file.
-5. Run the rest of the code to start the torrent download.
+3. When prompted, enter the magnet link of the torrent you want to download or 'exit' to quit.
+4. If you enter an invalid magnet link, the code will display an error message and prompt you to try again.
+5. The code will download the torrent and display a progress bar and information about the downloaded file.
 
 ## Code Components
 
